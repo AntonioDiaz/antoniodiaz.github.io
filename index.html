@@ -17,6 +17,7 @@
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
+  .margin_block {margin-left: 45px;margin-right: 45px;}
   .bg-1 { 
       background-color: #1abc9c; /* Green */
       color: #ffffff;
@@ -49,6 +50,31 @@
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
   }
+
+  .what a:link {
+      color: #ffffff; 
+      background-color: transparent; 
+      text-decoration: underline;
+  }
+
+  .what a:visited {
+      color: #ffffff; 
+      background-color: transparent;
+      text-decoration: underline;
+  }
+
+  .what a:hover {
+      color: #ffffff; 
+      background-color: transparent;
+      text-decoration: underline;
+  }
+
+  .what a:active {
+      color: #ffffff; 
+      background-color: transparent;
+      text-decoration: underline;
+  }
+
   </style>
 </head>
 <body>
@@ -62,49 +88,59 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Me</a>
+      <a class="navbar-brand" href="#">Antonio Díaz Arroyo</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
+        <li><a href="#div_who">WHO</a></li>
+        <li><a href="#div_what">WHAT</a></li>
+        <li><a href="#div_where">WHERE</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- First Container -->
-<div class="container-fluid bg-1 text-center">
+<div id="div_who" class="container-fluid bg-1 text-center">
   <h3 class="margin">Who Am I?</h3>
-  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm an adventurer</h3>
+  <img src="images/bird.jpg" class="img-responsive img-circle margin" style="display:inline; border-radius: 20%;" alt="Bird" width="350" height="350">
+  <h3>Family, friends, development, running ...</h3>
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
+<div id="div_what" class="container-fluid bg-2 text-center what">
   <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
+  <p class="margin_block">
+      I studied Computer Science at <a href="https://www.urjc.es/" target="_blank">URJC University</a> (2000-2004) since then I have focused my career on develpment.
+      <br>
+      Specialized on Java architecture, I become a <a href="https://drive.google.com/open?id=0B4-1O-gXP830VDY4TW5RZGx3Z3M" target="_blank">Sun Certified Java Programmer</a> for Java 2 Platform SE 5.0 (2008) and <a href="https://drive.google.com/open?id=0B4-1O-gXP830SGJudm5mZGZlOFk" target="_blank">Sun Certified Web Component Developer</a> for the Java Platform EE 5 (2009).
+      <br>
+      Although Spanish is my mother tongue I can manage myself in English, in 2014 I passed the test to get the <a href="https://drive.google.com/file/d/0B4-1O-gXP830Z2JmMmdTLWZlSm8/view?usp=sharing" target="_blank">B2 level</a>.
+      <br>
+      After years following Android development word, in 2017 I have got the Google Developer Certification to become an <a href="https://bcert.me/bc/html/show-badge.html?b=uwfwzlp" target="_blank">Associat Android Developer</a>.
+
+  </p>
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
+<div id="div_where" class="container-fluid bg-3 text-center">    
   <h3 class="margin">Where To Find Me?</h3><br>
   <div class="row">
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+    <div class="col-sm-4 text-center">
+      <p>Social networks: <a href="https://twitter.com/antonio_diaz_ar" target="_blank">Twitter</a>, <a href="www.linkedin.com/in/antonio-díaz-arroyo-68195237" target="_blank">Linkedin</a></p>
+      <a href="https://twitter.com/antonio_diaz_ar" target="_blank">
+        <img src="images/linkedin-logo.png" style="width:120px" alt="Image">
+      </a>
     </div>
     <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <p>My code: <a href="https://github.com/AntonioDiaz" target="_blank">Github</a>, <a href="https://www.hackerrank.com/a_diaz">HackeRrank</a></p>
+      <a href="https://github.com/AntonioDiaz" target="_blank">
+        <img src="images/Octocat.png" style="width:120px" alt="Image">
+      </a>
     </div>
     <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      <p>Email: antonio.diaz.arroyo@gmail.com</p>
+      <img src="images/gmail-logo.png" style="width:120px" alt="Image">
     </div>
   </div>
 </div>
@@ -112,6 +148,9 @@
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
   <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+  <p>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative 
+  Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+  <p>Icons made by <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
 </footer>
 
 </body>
