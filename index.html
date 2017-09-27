@@ -17,99 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-    body {
-        font: 20px Montserrat, sans-serif;
-        line-height: 1.8;
-        color: #f5f6f7;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    .margin {
-        margin-bottom: 45px;
-    }
-
-    .margin_block {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .bg-1 {
-        background-color: #1abc9c;
-        /* Green */
-        color: #ffffff;
-    }
-
-    .bg-2 {
-        background-color: #474e5d;
-        /* Dark Blue */
-        color: #ffffff;
-    }
-
-    .bg-3 {
-        background-color: #ffffff;
-        /* White */
-        color: #555555;
-    }
-
-    .bg-4 {
-        background-color: #2f2f2f;
-        /* Black Gray */
-        color: #fff;
-    }
-
-    .bg-projects {
-        background-color: #2f2f2f;
-        /* Black Gray */
-        color: #fff;
-    }
-
-    .container-fluid {
-        padding-top: 70px;
-        padding-bottom: 70px;
-    }
-
-    .navbar {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border: 0;
-        border-radius: 0;
-        margin-bottom: 0;
-        font-size: 12px;
-        letter-spacing: 5px;
-    }
-
-    .navbar-nav li a:hover {
-        color: #1abc9c !important;
-    }
-
-    .white_links a:link {
-        color: #ffffff;
-        background-color: transparent;
-        text-decoration: underline;
-    }
-
-    .white_links a:visited {
-        color: #ffffff;
-        background-color: transparent;
-        text-decoration: underline;
-    }
-
-    .white_links a:hover {
-        color: #ffffff;
-        background-color: transparent;
-        text-decoration: underline;
-    }
-
-    .white_links a:active {
-        color: #ffffff;
-        background-color: transparent;
-        text-decoration: underline;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
@@ -154,46 +62,14 @@
         </p>
     </div>
     <!-- Container Projects (Grid) -->
-    <div id="div_projects" class="container-fluid bg-projects white_links">
+    <div id="div_projects" class="container-fluid bg-projects text-center white_links">
         <h3 class="margin text-center">Projects</h3>
-    	<div class="row">
-            <div class="col-sm-1">&nbsp;</div>   
-            <div class="col-sm-10">                
-                <h4><a href="https://play.google.com/store/apps/details?id=com.adiaz.localsports">LocalSports</a></h4>
-                <p>
-                LocalSports is an Android application to allow users follow sport competitions from their towns.<br>
-                Functionalities offered by the app:
-                </p>
-                <ul>
-                    <li>
-                        <p>Check matches calendar dates, places and teams, also the final score when match is already played.
-                    </li>
-                    <li>
-                        <p>Check classification status: the points, matches played, won, lost and drawn.</p>
-                    </li>
-                    <li>
-                        <p>Follow competitions, so that user will receive notifications when a update happend in this compotitions. Also it is possible to disable notifications.</p>
-                    </li>
-                    <li>
-                        <p>Follow team, unlike follow competitions in this case user only will receive notifications when an update has an impact on the team</p>
-                    </li>
-                    <li>
-                        <p>Notify error: when user detect that some information is not correct can send a message to the administrator of the system in order to correct the data.</p>
-                    </li>
-                    <li>
-                        <p>Calendar integration: it is possible to add an event of the match date and time to the device calendar.</p>
-                    </li>
-                    <li>
-                        <p>Share match info: user can share info of the match like date, place, score by Whatsapp, email or sms.</p>
-                    </li>
-                    <li>
-                        <p>Map integration: it is possible to open the device map, to see where the match will take placed.</p>
-                    </li>
-                </ul>
-                </p>
-            </div>   
-            <div class="col-sm-1">&nbsp;</div>   
-        </div>
+        <p class="margin_block">
+            <h4><a href="LocalSports/index.html">LocalSports</a></h4>
+            <br>
+            <h4><a href="aad/index.html">Associated Android Developer (notes)</a></h4>
+            <br>
+        </p>
     </div>
     <!-- Third Container (Grid) -->
     <div id="div_where" class="container-fluid bg-3 text-center">
