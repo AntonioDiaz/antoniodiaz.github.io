@@ -95,3 +95,11 @@
         background-color: transparent;
         text-decoration: underline;
     }
+
+    .cv_list {
+        background-color: transparent;
+    }
+
+    .image_centered {
+        margin-left: auto; margin-right: auto; display: block;
+    }
