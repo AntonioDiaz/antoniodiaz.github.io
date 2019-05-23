@@ -1,7 +1,7 @@
 # GIT HELP
 <!-- TOC START min:2 max:3 link:true asterisk:false update:true -->
 - [Intro](#intro)
-- [Moviendose por ahi con git](#moviendose-por-ahi-con-git)
+- [Moving around in Git](#moving-around-in-git)
 - [Revirtiendo cambios](#revirtiendo-cambios)
 - [Moviendo trabajo por ahí](#moviendo-trabajo-por-ahí)
 - [Git Interactive Rebase](#git-interactive-rebase)
@@ -24,6 +24,7 @@ git commit
 **Mergeando ramas**
 * Option 1
 >git merge bugFix
+![](https://antoniodiaz.github.io/images/git/git_merge_01.jpg)
 * Option 2
 >git checkout bugFix   
 git merge master
@@ -38,7 +39,7 @@ git merge master
 >git rebase bugFix  
 ![](https://antoniodiaz.github.io/images/git/git_rebase_02.jpg)  
 
-## Moviendose por ahi con git
+## Moving around in Git
 **HEAD**
 * it's essentially what commit you're working on top of.
 * Normally HEAD points to a branch name (like bugFix). When you commit, the status of bugFix is altered and this change is visible through HEAD.
