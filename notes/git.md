@@ -23,12 +23,12 @@ git commit
 
 **Mergeando ramas**
 * Option 1
->git merge bugFix
+>git merge bugFix  
 ![](https://antoniodiaz.github.io/images/git/git_merge_01.jpg)
 * Option 2
 >git checkout bugFix   
-git merge master
-
+git merge master  
+![](https://antoniodiaz.github.io/images/git/git_merge_02.jpg)
 **Rebase**
 * The second way of combining work between branches is rebasing. Rebasing essentially takes a set of commits, "copies" them, and plops them down somewhere else.
 * While this sounds confusing, the advantage of rebasing is that it can be used to make a nice linear sequence of commits. The commit log / history of the repository will be a lot cleaner if only rebasing is allowed.  
