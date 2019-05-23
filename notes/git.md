@@ -1,39 +1,46 @@
 # GIT HELP
-https://learngitbranching.js.org/
-## Intro 
-* Commits de Git
->git commit
-* Ramas git
+<!-- TOC START min:2 max:3 link:true asterisk:false update:true -->
+- [Intro](#intro)
+- [Moviendose por ahi con git](#moviendose-por-ahi-con-git)
+- [Revirtiendo cambios](#revirtiendo-cambios)
+- [Moviendo trabajo por ahí](#moviendo-trabajo-por-ahí)
+- [Git Interactive Rebase](#git-interactive-rebase)
+<!-- TOC END -->
+## Intro
+* https://learngitbranching.js.org/
+* **Commits**
+>git commit  
+* **Ramas git**
   * Create branch
   >git branch newImage
   * Commit on branch
   >git ckeckout newImage   
   git commit
 
-* Mergeando ramas
+* **Mergeando ramas**
     * Option 1
     >git merge bugFix
     * Option 2
     >git checkout bugFix   
     git merge master
 
-* Git Rebase
+* **Rebase**
     * Rebasear escencialmente agarra un conjunto de commits, los "copia", y los aplica sobre algún otro lado.
-    * Aunque esto pueda sonar confuso, la ventaja de rebasear es que puede usarse para conseguir una secuencia de commits lineal, 
+    * Aunque esto pueda sonar confuso, la ventaja de rebasear es que puede usarse para conseguir una secuencia de commits lineal,
     más bonita. El historial / log de commits del repositorio va a estar mucho más claro si solo usas rebase.
     >git rebase master  
-      
+
     ![](https://antoniodiaz.github.io/images/git/git_rebase_01.jpg)  
-    
-    >git rebase bugFix 
-          
+
+    >git rebase bugFix
+
     ![](https://antoniodiaz.github.io/images/git/git_rebase_02.jpg)  
 
 ## Moviendose por ahi con git
-**HEAD**: 
+**HEAD**
 * it's essentially what commit you're working on top of.
 * Normally HEAD points to a branch name (like bugFix). When you commit, the status of bugFix is altered and this change is visible through HEAD.
-* Deteaching HEAD: 
+* Deteaching HEAD:
 >git checkout C1  
 
 ![](https://antoniodiaz.github.io/images/git/git_head_01.jpg)
@@ -44,33 +51,33 @@ https://learngitbranching.js.org/
 >git checkout master^  
 
 ![](https://antoniodiaz.github.io/images/git/git_head_02.jpg)
-  
+
 >git checkout C3  
 git checkout HEAD^  
 git checkout HEAD^  
 git checkout HEAD^  
 
 ![](https://antoniodiaz.github.io/images/git/git_head_03.jpg)
-  
+
 >git checkout HEAD~4  
 
 ![](https://antoniodiaz.github.io/images/git/git_head_04.jpg)
-  
+
 * Move branch:
 >git branch -f master HEAD~3  
 
 ![](https://antoniodiaz.github.io/images/git/git_head_05.jpg)
-  
+
 ## Revirtiendo cambios
-* **Git Reset**: revierte los cambios moviendo la referencia de una rama hacia atras en el tiempo a un commit anterior. 
+* **Git Reset**: revierte los cambios moviendo la referencia de una rama hacia atras en el tiempo a un commit anterior.
 Se puede ver como "reescribir la historia". git reset va a mover la rama hacia atrás, como si el commit nunca se hubiera hecho.
 >git reset HEAD~4
 
 ![](https://antoniodiaz.github.io/images/git/git_reset_01.jpg)
 
-* **Git Revert**: Mientras que resetear los cambios funciona genial para ramas locales en tu maquina, 
+* **Git Revert**: Mientras que resetear los cambios funciona genial para ramas locales en tu maquina,
 su metodo de "reescribir la historia" no funciona para ramas remotas que otros estan usando.
-Para revertir cambios y compartir esa revertida con otros, necesitamos usar git revert. 
+Para revertir cambios y compartir esa revertida con otros, necesitamos usar git revert.
 Cuando usas revert, puedes pushear ese cambio para compartirlo con otros.
 Revert crea un nuevo commit aplicado sobre el que queriamos revertir.
 >git revert HEAD
@@ -80,7 +87,7 @@ Revert crea un nuevo commit aplicado sobre el que queriamos revertir.
 
 ## Moviendo trabajo por ahí
 * Git Cherry-pick: git cherry-pick Commit1 Commit2 ...
-> git cherry-pick C2 C4 
+> git cherry-pick C2 C4
 
 ![](https://antoniodiaz.github.io/images/git/git_cherry_pick_01.jpg)
 
