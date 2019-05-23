@@ -8,33 +8,35 @@
 <!-- TOC END -->
 ## Intro
 * https://learngitbranching.js.org/
-* **Commits**
+
+**Commits**
 >git commit  
-* **Ramas git**
-  * Create branch
-  >git branch newImage
-  * Commit on branch
-  >git ckeckout newImage   
-  git commit
 
-* **Mergeando ramas**
-    * Option 1
-    >git merge bugFix
-    * Option 2
-    >git checkout bugFix   
-    git merge master
+**Ramas**
+* Create branch
+>git branch newImage
+* Commit on branch
+>git ckeckout newImage   
+git commit  
+* Branch: create and checkout
+> git checkout -b [yourbranchname]
 
-* **Rebase**
-    * Rebasear escencialmente agarra un conjunto de commits, los "copia", y los aplica sobre algún otro lado.
-    * Aunque esto pueda sonar confuso, la ventaja de rebasear es que puede usarse para conseguir una secuencia de commits lineal,
-    más bonita. El historial / log de commits del repositorio va a estar mucho más claro si solo usas rebase.
-    >git rebase master  
+**Mergeando ramas**
+* Option 1
+>git merge bugFix
+* Option 2
+>git checkout bugFix   
+git merge master
 
-    ![](https://antoniodiaz.github.io/images/git/git_rebase_01.jpg)  
+**Rebase**
+* The second way of combining work between branches is rebasing. Rebasing essentially takes a set of commits, "copies" them, and plops them down somewhere else.
+* While this sounds confusing, the advantage of rebasing is that it can be used to make a nice linear sequence of commits. The commit log / history of the repository will be a lot cleaner if only rebasing is allowed.  
 
-    >git rebase bugFix
+>git rebase master  
+![](https://antoniodiaz.github.io/images/git/git_rebase_01.jpg)  
 
-    ![](https://antoniodiaz.github.io/images/git/git_rebase_02.jpg)  
+>git rebase bugFix  
+![](https://antoniodiaz.github.io/images/git/git_rebase_02.jpg)  
 
 ## Moviendose por ahi con git
 **HEAD**
@@ -42,7 +44,6 @@
 * Normally HEAD points to a branch name (like bugFix). When you commit, the status of bugFix is altered and this change is visible through HEAD.
 * Deteaching HEAD:
 >git checkout C1  
-
 ![](https://antoniodiaz.github.io/images/git/git_head_01.jpg)
 
 **Relative Refs**
