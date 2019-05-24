@@ -1,6 +1,8 @@
 # GIT HELP
-<!-- TOC START min:2 max:3 link:true asterisk:false update:true -->
+<!-- TOC START min:2 max:4 link:true asterisk:false update:true -->
 - [Intro](#intro)
+    - [Commit](#commit)
+    - [Merge](#merge)
 - [Moving around in Git](#moving-around-in-git)
 - [Revirtiendo cambios](#revirtiendo-cambios)
 - [Moviendo trabajo por ahí](#moviendo-trabajo-por-ahí)
@@ -9,7 +11,7 @@
 ## Intro
 * https://learngitbranching.js.org/
 
-**Commits**
+### Commit
 >git commit  
 
 **Branches and Merging**
@@ -21,7 +23,7 @@ git commit
 * Branch: create and checkout
 > git checkout -b [yourbranchname]
 
-**Merge**
+### Merge
 * Step 1
 >git merge bugFix  
 <img src="https://antoniodiaz.github.io/images/git/git_merge_01.jpg" alt="drawing" width="300"/>  
@@ -29,7 +31,7 @@ git commit
 * Step 2
 >git checkout bugFix   
 git merge master  
-<img src="https://antoniodiaz.github.io/images/git/git_merge_02.png" alt="drawing" width="300"/>
+<img src="https://antoniodiaz.github.io/images/git/git_merge_02.jpg" alt="drawing" width="300"/>
 
 **Rebase**
 * The second way of combining work between branches is rebasing. Rebasing essentially takes a set of commits, "copies" them, and plops them down somewhere else.
