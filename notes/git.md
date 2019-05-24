@@ -190,10 +190,24 @@ v2_1_gC4
 * Like the ~ modifier, the ^ modifier also accepts an optional number after it.
 * Rather than specifying the number of generations to go back (what ~ takes), the modifier on ^ specifies which parent reference to follow from a merge commit. Remember that merge commits have multiple parents, so the path to choose is ambiguous.
 * Git will normally follow the "first" parent upwards from a merge commit, but specifying a number with ^ changes this default behavior.
->git checkout master  
+
+>git checkout master^  
 Here we have a merge commit. If we checkout master^ without the modifier, we will follow the first parent after the merge commit.
-(In our visuals, the first parent is positioned directly above the merge commit.)
+(In our visuals, the first parent is positioned directly above the merge commit.)  
 <img src="https://antoniodiaz.github.io/images/git/git_multiple_parents_01.jpg" width="400"/>  
 
+>git checkout master^2  
+<img src="https://antoniodiaz.github.io/images/git/git_multiple_parents_02.jpg" width="400"/>  
+
+* The ^ and ~ modifiers can make moving around a commit tree very powerful:  
+
+>git checkout HEAD~  
+git checkout HEAD^2  
+git checkout HEAD~2  
+<img src="https://antoniodiaz.github.io/images/git/git_multiple_parents_03.jpg" width="400"/>  
+
+* Even crazier, these modifiers can be chained together! Check this out:
+>git checkout HEAD~^2~2  
+<img src="https://antoniodiaz.github.io/images/git/git_multiple_parents_03.jpg" width="400"/>  
 
 ### Branch Spaghetti
