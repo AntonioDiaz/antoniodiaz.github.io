@@ -22,13 +22,14 @@ git commit
 > git checkout -b [yourbranchname]
 
 **Mergeando ramas**
-* Option 1
+* Step 1
 >git merge bugFix  
-![](https://antoniodiaz.github.io/images/git/git_merge_01.jpg)
-* Option 2
+<img src="https://antoniodiaz.github.io/images/git/git_merge_01.jpg" alt="drawing" width="300"/>  
+
+* Step 2
 >git checkout bugFix   
 git merge master  
-![](https://antoniodiaz.github.io/images/git/git_merge_02.png)
+<img src="https://antoniodiaz.github.io/images/git/git_merge_02.png" alt="drawing" width="300"/>
 
 **Rebase**
 * The second way of combining work between branches is rebasing. Rebasing essentially takes a set of commits, "copies" them, and plops them down somewhere else.
@@ -42,8 +43,12 @@ git merge master
 
 ## Moving around in Git
 **HEAD**
-* it's essentially what commit you're working on top of.
+* First we have to talk about "HEAD". HEAD is the symbolic name for the currently checked out commit -- it's essentially what commit you're working on top of.
+
+* HEAD always points to the most recent commit which is reflected in the working tree. Most git commands which make changes to the working tree will start by changing HEAD.
+
 * Normally HEAD points to a branch name (like bugFix). When you commit, the status of bugFix is altered and this change is visible through HEAD.
+
 * Deteaching HEAD:
 >git checkout C1  
 ![](https://antoniodiaz.github.io/images/git/git_head_01.jpg)
@@ -66,9 +71,8 @@ git checkout HEAD^
 
 ![](https://antoniodiaz.github.io/images/git/git_head_04.jpg)
 
-* Move branch:
+* Move branch: One of the most common ways I use relative refs is to move branches around. You can directly reassign a branch to a commit with the -f option.  
 >git branch -f master HEAD~3  
-
 ![](https://antoniodiaz.github.io/images/git/git_head_05.jpg)
 
 ## Revirtiendo cambios
