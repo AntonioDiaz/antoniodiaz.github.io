@@ -7,7 +7,7 @@
 - [Reversing Changes](#reversing-changes)
 - [Moving Work Around](#moving-work-around)
     - [Cherry-pick](#cherry-pick)
-- [Git Interactive Rebase](#git-interactive-rebase)
+    - [Git Interactive Rebase](#git-interactive-rebase)
 <!-- TOC END -->
 ## Intro
 * https://learngitbranching.js.org/
@@ -96,7 +96,19 @@ git checkout HEAD^
 * Syntax: *git cherry-pick Commit1 Commit2 ...*
 * It's a very straightforward way of saying that you would like to copy a series of commits below your current location (HEAD). I personally love cherry-pick because there is very little magic involved and it's easy to understand.  
 
-> git cherry-pick C2 C4
+> git cherry-pick C2 C4  
 <img src="https://antoniodiaz.github.io/images/git/git_cherry_pick_01.jpg" width="400"/>  
 
-## Git Interactive Rebase
+### Git Interactive Rebase
+* Cherry-pick is great when you know which commits you want (and you know their corresponding hashes), it's hard to beat the simplicity it provides.
+* But what about the situation where you don't know what commits you want? Thankfully git has you covered there as well! We can use interactive rebasing for this, it's the best way to review a series of commits you're about to rebase.
+* All interactive rebase means is using the rebase command with the -i option.
+* If you include this option, git will open up a UI to show you which commits are about to be copied below the target of the rebase. It also shows their commit hashes and messages, which is great for getting a bearing on what's what.
+* For "real" git, the UI window means opening up a file in a text editor like vim. For our purposes, I've built a small dialog window that behaves the same way.
+* When the **interactive rebase dialog** opens, you have the ability to do 3 things:
+  * You can **reorder commits** simply by changing their order in the UI (in our window this means dragging and dropping with the mouse).
+  * You can choose to completely **omit some commits**. This is designated by pick, toggling pick off means you want to drop the commit.
+  * Lastly, you can **squash commits**. Unfortunately our levels don't support this for a few logistical reasons, so I'll skip over the details of this. Long story short, though -- it allows you to combine commits.  
+  
+  >git rebase -i HEAD~4
+  <img src="https://antoniodiaz.github.io/images/git/git_interactive_rebase.jpg" width="400"/>
