@@ -4,7 +4,7 @@
     - [Commit](#commit)
     - [Merge](#merge)
 - [Moving around in Git](#moving-around-in-git)
-- [Revirtiendo cambios](#revirtiendo-cambios)
+- [Reversing Changes](#reversing-changes)
 - [Moviendo trabajo por ahí](#moviendo-trabajo-por-ahí)
 - [Git Interactive Rebase](#git-interactive-rebase)
 <!-- TOC END -->
@@ -73,21 +73,21 @@ git checkout HEAD^
 >git branch -f master HEAD~3  
 <img src="https://antoniodiaz.github.io/images/git/git_head_05.jpg" width="400"/>  
 
-## Revirtiendo cambios
-* **Git Reset**: revierte los cambios moviendo la referencia de una rama hacia atras en el tiempo a un commit anterior.
-Se puede ver como "reescribir la historia". git reset va a mover la rama hacia atrás, como si el commit nunca se hubiera hecho.
+## Reversing Changes
+* There are many ways to reverse changes in Git. And just like committing, reversing changes in Git has both a low-level component (staging individual files or chunks) and a high-level component (how the changes are actually reversed).  
+
+**Git Reset**  
+* *git reset* reverts changes by moving a branch reference backwards in time to an older commit. In this sense you can think of it as "rewriting history;" git reset will move a branch backwards as if the commit had never been made in the first place.  
+
 >git reset HEAD~4
+<img src="https://antoniodiaz.github.io/images/git/git_reset_01.jpg" width="400"/>  
 
-![](https://antoniodiaz.github.io/images/git/git_reset_01.jpg)
+**Git Revert**
+* While resetting works great for local branches on your own machine, its method of "rewriting history" doesn't work for remote branches that others are using.
+* In order to reverse changes and share those reversed changes with others, we need to use git revert. Let's see it in action.  
 
-* **Git Revert**: Mientras que resetear los cambios funciona genial para ramas locales en tu maquina,
-su metodo de "reescribir la historia" no funciona para ramas remotas que otros estan usando.
-Para revertir cambios y compartir esa revertida con otros, necesitamos usar git revert.
-Cuando usas revert, puedes pushear ese cambio para compartirlo con otros.
-Revert crea un nuevo commit aplicado sobre el que queriamos revertir.
 >git revert HEAD
-
-![](https://antoniodiaz.github.io/images/git/git_revert_01.jpg)
+<img src="https://antoniodiaz.github.io/images/git/git_revert_01.jpg" width="400"/>  
 
 
 ## Moviendo trabajo por ahí
