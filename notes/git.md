@@ -18,6 +18,7 @@
     - [Juggling Commits 1](#juggling-commits-1)
     - [Juggling Commits 2](#juggling-commits-2)
     - [Git Tags](#git-tags)
+    - [Git Describe](#git-describe)
 - [Advanced Topics](#advanced-topics)
     - [Rebasing over 9000 times](#rebasing-over-9000-times)
     - [Multiple parents](#multiple-parents)
@@ -160,8 +161,24 @@ git checkout HEAD^
 * More importantly though, they never move as more commits are created. You can't "check out" a tag and then complete work on that tag -- tags exist as anchors in the commit tree that designate certain spots.
 > git tag V1 C1  
 We named the tag v1 and referenced the commit C1 explicitly. If you leave the commit off, git will just use whatever HEAD is at.  
-<img src="https://antoniodiaz.github.io/images/git/git_tag_01.jpg" width="400"/>
+<img src="https://antoniodiaz.github.io/images/git/git_tag_01.jpg" width="200"/>
+
 ### Git Describe
+* Because tags serve as such great "anchors" in the codebase, git has a command to describe where you are relative to the closest "anchor" (aka tag). And that command is called git describe!
+* Git describe can help you get your bearings after you've moved many commits backwards or forwards in history; this can happen after you've completed a git bisect (a debugging search) or when sitting down at a coworkers computer who just got back from vacation.
+* Git describe takes the form of:
+> **git describe &lt;ref&gt;**  
+Where &lt;ref&gt; is anything git can resolve into a commit. If you don't specify a ref, git just uses where you're checked out right now (HEAD).
+* The output of the command looks like:
+>**&lt;tag&gt;_&lt;numCommits&gt;_g&lt;hash&gt;**  
+Where tag is the closest ancestor tag in history, numCommits is how many commits away that tag is, and <hash> is the hash of the commit being described.  
+* Example
+>git tag v2 C3  
+<img src="https://antoniodiaz.github.io/images/git/git_describe_01.jpg" width="400"/>  
+The command *git describe master* would output:  
+v1_2_gC2  
+Whereas *git describe side* would output:  
+v2_1_gC4  
 
 ## Advanced Topics
 ### Rebasing over 9000 times
