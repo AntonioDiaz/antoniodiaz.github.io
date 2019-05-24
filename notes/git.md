@@ -18,7 +18,6 @@
     - [Juggling Commits 1](#juggling-commits-1)
     - [Juggling Commits 2](#juggling-commits-2)
     - [Git Tags](#git-tags)
-    - [Git Describe](#git-describe)
 - [Advanced Topics](#advanced-topics)
     - [Rebasing over 9000 times](#rebasing-over-9000-times)
     - [Multiple parents](#multiple-parents)
@@ -157,7 +156,11 @@ git checkout HEAD^
 ### Git Tags
 * As you have learned from previous lessons, branches are easy to move around and often refer to different commits as work is completed on them. Branches are easily mutated, often temporary, and always changing.
 * If that's the case, you may be wondering if there's a way to permanently mark historical points in your project's history. For things like major releases and big merges, is there any way to mark these commits with something more permanent than a branch?
-
+* Git tags support this exact use case -- they (somewhat) permanently mark certain commits as "milestones" that you can then reference like a branch.
+* More importantly though, they never move as more commits are created. You can't "check out" a tag and then complete work on that tag -- tags exist as anchors in the commit tree that designate certain spots.
+> git tag V1 C1  
+We named the tag v1 and referenced the commit C1 explicitly. If you leave the commit off, git will just use whatever HEAD is at.  
+<img src="https://antoniodiaz.github.io/images/git/git_tag_01.jpg" width="400"/>
 ### Git Describe
 
 ## Advanced Topics
