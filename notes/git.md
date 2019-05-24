@@ -5,7 +5,8 @@
     - [Merge](#merge)
 - [Moving around in Git](#moving-around-in-git)
 - [Reversing Changes](#reversing-changes)
-- [Moviendo trabajo por ahí](#moviendo-trabajo-por-ahí)
+- [Moving Work Around](#moving-work-around)
+    - [Cherry-pick](#cherry-pick)
 - [Git Interactive Rebase](#git-interactive-rebase)
 <!-- TOC END -->
 ## Intro
@@ -90,10 +91,12 @@ git checkout HEAD^
 <img src="https://antoniodiaz.github.io/images/git/git_revert_01.jpg" width="400"/>  
 
 
-## Moviendo trabajo por ahí
-* Git Cherry-pick: git cherry-pick Commit1 Commit2 ...
-> git cherry-pick C2 C4
+## Moving Work Around
+### Cherry-pick
+* Syntax: *git cherry-pick Commit1 Commit2 ...*
+* It's a very straightforward way of saying that you would like to copy a series of commits below your current location (HEAD). I personally love cherry-pick because there is very little magic involved and it's easy to understand.  
 
-![](https://antoniodiaz.github.io/images/git/git_cherry_pick_01.jpg)
+> git cherry-pick C2 C4
+<img src="https://antoniodiaz.github.io/images/git/git_cherry_pick_01.jpg" width="400"/>  
 
 ## Git Interactive Rebase
