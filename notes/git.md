@@ -8,6 +8,16 @@
 - [Moving Work Around](#moving-work-around)
     - [Cherry-pick](#cherry-pick)
     - [Git Interactive Rebase](#git-interactive-rebase)
+- [A Mixed Bag](#a-mixed-bag)
+    - [Grabbing Just 1 Commit](#grabbing-just-1-commit)
+    - [Juggling Commits 1](#juggling-commits-1)
+    - [Juggling Commits 2](#juggling-commits-2)
+    - [Git Tags](#git-tags)
+    - [Git Describe](#git-describe)
+- [Advanced Topics](#advanced-topics)
+    - [Rebasing over 9000 times](#rebasing-over-9000-times)
+    - [Multiple parents](#multiple-parents)
+    - [Branch Spaghetti](#branch-spaghetti)
 <!-- TOC END -->
 ## Intro
 * https://learngitbranching.js.org/
@@ -110,5 +120,17 @@ git checkout HEAD^
   * You can choose to completely **omit some commits**. This is designated by pick, toggling pick off means you want to drop the commit.
   * Lastly, you can **squash commits**. Unfortunately our levels don't support this for a few logistical reasons, so I'll skip over the details of this. Long story short, though -- it allows you to combine commits.  
 
->git rebase -i HEAD~4
+>git rebase -i HEAD~4  
 <img src="https://antoniodiaz.github.io/images/git/git_interactive_rebase_01.jpg" width="400"/>
+
+## A Mixed Bag
+### Grabbing Just 1 Commit
+### Juggling Commits 1
+### Juggling Commits 2
+### Git Tags
+### Git Describe
+
+## Advanced Topics
+### Rebasing over 9000 times
+### Multiple parents
+### Branch Spaghetti
