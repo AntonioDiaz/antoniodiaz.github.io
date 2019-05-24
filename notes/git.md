@@ -206,8 +206,12 @@ git checkout HEAD^2
 git checkout HEAD~2  
 <img src="https://antoniodiaz.github.io/images/git/git_multiple_parents_03.jpg" width="400"/>  
 
-* Even crazier, these modifiers can be chained together! Check this out:
+* Even crazier, these modifiers can be chained together! Check this out:  
+
 >git checkout HEAD~^2~2  
 <img src="https://antoniodiaz.github.io/images/git/git_multiple_parents_03.jpg" width="400"/>  
 
 ### Branch Spaghetti
+* Here we have master that is a few commits ahead of branches one two and three. For whatever reason, we need to update these three other branches with modified versions of the last few commits on master.
+* Branch one needs a re-ordering and a deletion of C5. two needs pure reordering, and three only needs one commit!
+* We will let you figure out how to solve this one -- make sure to check out our solution afterwards with show solution.
