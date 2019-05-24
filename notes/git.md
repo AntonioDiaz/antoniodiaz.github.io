@@ -79,14 +79,14 @@ git checkout HEAD^
 **Git Reset**  
 * *git reset* reverts changes by moving a branch reference backwards in time to an older commit. In this sense you can think of it as "rewriting history;" git reset will move a branch backwards as if the commit had never been made in the first place.  
 
->git reset HEAD~4
+>git reset HEAD~4  
 <img src="https://antoniodiaz.github.io/images/git/git_reset_01.jpg" width="400"/>  
 
 **Git Revert**
 * While resetting works great for local branches on your own machine, its method of "rewriting history" doesn't work for remote branches that others are using.
 * In order to reverse changes and share those reversed changes with others, we need to use git revert. Let's see it in action.  
 
->git revert HEAD
+>git revert HEAD  
 <img src="https://antoniodiaz.github.io/images/git/git_revert_01.jpg" width="400"/>  
 
 
