@@ -26,22 +26,22 @@ git commit
 ### Merge
 * Step 1
 >git merge bugFix  
-<img src="https://antoniodiaz.github.io/images/git/git_merge_01.jpg" alt="drawing" width="300"/>  
+<img src="https://antoniodiaz.github.io/images/git/git_merge_01.jpg" alt="drawing" width="400"/>  
 
 * Step 2
 >git checkout bugFix   
 git merge master  
-<img src="https://antoniodiaz.github.io/images/git/git_merge_02.jpg" alt="drawing" width="300"/>
+<img src="https://antoniodiaz.github.io/images/git/git_merge_02.jpg" alt="drawing" width="400"/>
 
 **Rebase**
 * The second way of combining work between branches is rebasing. Rebasing essentially takes a set of commits, "copies" them, and plops them down somewhere else.
 * While this sounds confusing, the advantage of rebasing is that it can be used to make a nice linear sequence of commits. The commit log / history of the repository will be a lot cleaner if only rebasing is allowed.  
 
 >git rebase master  
-![](https://antoniodiaz.github.io/images/git/git_rebase_01.jpg)  
+<img src="https://antoniodiaz.github.io/images/git/git_rebase_01.jpg" alt="drawing" width="400"/>  
 
 >git rebase bugFix  
-![](https://antoniodiaz.github.io/images/git/git_rebase_02.jpg)  
+<img src="https://antoniodiaz.github.io/images/git/git_rebase_02.jpg" alt="drawing" width="400"/>  
 
 ## Moving around in Git
 **HEAD**
