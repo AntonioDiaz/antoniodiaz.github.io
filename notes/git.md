@@ -26,22 +26,22 @@ git commit
 ### Merge
 * Step 1
 >git merge bugFix  
-<img src="https://antoniodiaz.github.io/images/git/git_merge_01.jpg" alt="drawing" width="400"/>  
+<img src="https://antoniodiaz.github.io/images/git/git_merge_01.jpg" width="400"/>  
 
 * Step 2
 >git checkout bugFix   
 git merge master  
-<img src="https://antoniodiaz.github.io/images/git/git_merge_02.jpg" alt="drawing" width="400"/>
+<img src="https://antoniodiaz.github.io/images/git/git_merge_02.jpg" width="400"/>
 
 **Rebase**
 * The second way of combining work between branches is rebasing. Rebasing essentially takes a set of commits, "copies" them, and plops them down somewhere else.
 * While this sounds confusing, the advantage of rebasing is that it can be used to make a nice linear sequence of commits. The commit log / history of the repository will be a lot cleaner if only rebasing is allowed.  
 
 >git rebase master  
-<img src="https://antoniodiaz.github.io/images/git/git_rebase_01.jpg" alt="drawing" width="400"/>  
+<img src="https://antoniodiaz.github.io/images/git/git_rebase_01.jpg" width="400"/>  
 
 >git rebase bugFix  
-<img src="https://antoniodiaz.github.io/images/git/git_rebase_02.jpg" alt="drawing" width="400"/>  
+<img src="https://antoniodiaz.github.io/images/git/git_rebase_02.jpg" width="400"/>  
 
 ## Moving around in Git
 **HEAD**
@@ -53,29 +53,24 @@ git merge master
 
 * Deteaching HEAD:
 >git checkout C1  
-![](https://antoniodiaz.github.io/images/git/git_head_01.jpg)
-
+<img src="https://antoniodiaz.github.io/images/git/git_head_01.jpg" width="400"/>
 **Relative Refs**
 * Moving upwards one commit at a time with ^
-* Moving upwards a number of times with ~num  
 >git checkout master^  
-
-![](https://antoniodiaz.github.io/images/git/git_head_02.jpg)
-
+<img src="https://antoniodiaz.github.io/images/git/git_head_02.jpg"   width="400"/>  
 >git checkout C3  
 git checkout HEAD^  
 git checkout HEAD^  
 git checkout HEAD^  
-
-![](https://antoniodiaz.github.io/images/git/git_head_03.jpg)
-
+<img src="https://antoniodiaz.github.io/images/git/git_head_03.jpg" width="400"/>  
+* Moving upwards a number of times with ~num  
 >git checkout HEAD~4  
+<img src="https://antoniodiaz.github.io/images/git/git_head_04.jpg" width="400"/>  
 
-![](https://antoniodiaz.github.io/images/git/git_head_04.jpg)
-
-* Move branch: One of the most common ways I use relative refs is to move branches around. You can directly reassign a branch to a commit with the -f option.  
+**Move branch**
+* One of the most common ways I use relative refs is to move branches around. You can directly reassign a branch to a commit with the -f option.  
 >git branch -f master HEAD~3  
-![](https://antoniodiaz.github.io/images/git/git_head_05.jpg)
+<img src="https://antoniodiaz.github.io/images/git/git_head_05.jpg" width="400"/>  
 
 ## Revirtiendo cambios
 * **Git Reset**: revierte los cambios moviendo la referencia de una rama hacia atras en el tiempo a un commit anterior.
