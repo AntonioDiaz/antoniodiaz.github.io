@@ -24,6 +24,7 @@
     - [Multiple parents](#multiple-parents)
     - [Branch Spaghetti](#branch-spaghetti)
 <!-- TOC END -->
+
 ## Intro
 * https://learngitbranching.js.org/
 
@@ -182,5 +183,17 @@ v2_1_gC4
 
 ## Advanced Topics
 ### Rebasing over 9000 times
+* Man, we have a lot of branches going on here! Let's rebase all the work from these branches onto master.
+* Upper management is making this a bit trickier though -- they want the commits to all be in **sequential order**. So this means that our final tree should have C7' at the bottom, C6' above that, and so on, all in order.
+* If you mess up along the way, feel free to use reset to start over again. Be sure to check out our solution and see if you can do it in fewer commands!
 ### Multiple parents
+* Like the ~ modifier, the ^ modifier also accepts an optional number after it.
+* Rather than specifying the number of generations to go back (what ~ takes), the modifier on ^ specifies which parent reference to follow from a merge commit. Remember that merge commits have multiple parents, so the path to choose is ambiguous.
+* Git will normally follow the "first" parent upwards from a merge commit, but specifying a number with ^ changes this default behavior.
+>git checkout master  
+Here we have a merge commit. If we checkout master^ without the modifier, we will follow the first parent after the merge commit.
+(In our visuals, the first parent is positioned directly above the merge commit.)
+<img src="https://antoniodiaz.github.io/images/git/git_multiple_parents_01.jpg" width="400"/>  
+
+
 ### Branch Spaghetti
