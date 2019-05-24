@@ -12,16 +12,16 @@
 **Commits**
 >git commit  
 
-**Ramas**
-* Create branch
->git branch newImage
+**Branches and Merging**
+* Create branch:
+> git branch newImage
 * Commit on branch
->git ckeckout newImage   
+> git ckeckout newImage  
 git commit  
 * Branch: create and checkout
 > git checkout -b [yourbranchname]
 
-**Mergeando ramas**
+**Merge**
 * Step 1
 >git merge bugFix  
 <img src="https://antoniodiaz.github.io/images/git/git_merge_01.jpg" alt="drawing" width="300"/>  
