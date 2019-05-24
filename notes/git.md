@@ -53,7 +53,8 @@ git merge master
 
 * Deteaching HEAD:
 >git checkout C1  
-<img src="https://antoniodiaz.github.io/images/git/git_head_01.jpg" width="400"/>
+<img src="https://antoniodiaz.github.io/images/git/git_head_01.jpg" width="400"/>  
+
 **Relative Refs**
 * Moving upwards one commit at a time with ^
 >git checkout master^  
