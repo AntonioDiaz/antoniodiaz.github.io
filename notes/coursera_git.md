@@ -6,4 +6,4 @@ https://www.coursera.org/learn/version-control-with-git/
 
 | -   |      SourceTree      |  Command Line |
 |----------|:-------------:|:------:|
-| Instalation and getting started |  - | - |
+| Instalation and getting started |  <img src="https://img.icons8.com/material-sharp/24/000000/visible.png"> | <img src="https://img.icons8.com/material-sharp/24/000000/visible.png"> |
