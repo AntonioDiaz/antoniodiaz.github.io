@@ -49,11 +49,11 @@
 
 * **Rebasing**  
 [sourcetree](https://antoniodiaz.github.io/notes/coursera/pdf/03_04_rebasing_sourcetree.pdf)  
-[cli](https://antoniodiaz.github.io/notes/coursera/pdf/03_03_rebasing_cli.pdf)
+[cli](https://antoniodiaz.github.io/notes/coursera/pdf/03_04_rebasing_cli.pdf)
 
 * **Rewriting History**  
 [sourcetree](https://antoniodiaz.github.io/notes/coursera/pdf/03_05_rewriting_sourcetree.pdf)  
-[cli](https://antoniodiaz.github.io/notes/coursera/pdf/03_04_rewriting_cli.pdf)
+[cli](https://antoniodiaz.github.io/notes/coursera/pdf/03_05_rewriting_cli.pdf)
 
 ## Week 4
 * **Pull Request I**  
