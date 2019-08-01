@@ -9,24 +9,16 @@
 [sourcetree](https://antoniodiaz.github.io/notes/coursera/pdf/01_02_create_local_sourcetree.pdf)  
 [cli](https://antoniodiaz.github.io/notes/coursera/pdf/01_02_create_local_cli.pdf)
 
-* ** **  
-[sourcetree]()  
-[cli]()
+* **Commit to Local Repository**  
+[sourcetree](https://antoniodiaz.github.io/notes/coursera/pdf/01_03_commit_local_sourcetree.pdf)  
+[cli](https://antoniodiaz.github.io/notes/coursera/pdf/01_03_commit_local_cli.pdf)
 
+* **Create a Remote Repository**  
+[sourcetree & cli](https://antoniodiaz.github.io/notes/coursera/pdf/01_04_create_remote.pdf)  
 
-* ** **  
-[sourcetree]()  
-[cli]()
-
-
-* ** **  
-[sourcetree]()  
-[cli]()
-
-
-* ** **  
-[sourcetree]()  
-[cli]()
+* **Push to a Remote Repository**  
+[sourcetree](https://antoniodiaz.github.io/notes/coursera/pdf/01_05_push_sourcetree.pdf)  
+[cli](https://antoniodiaz.github.io/notes/coursera/pdf/01_05_push_cli.pdf)
 
 
 ## Week 2
