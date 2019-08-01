@@ -63,11 +63,3 @@
 * **Pull Request II**  
 [sourcetree](https://antoniodiaz.github.io/notes/coursera/pdf/04_02_pull_request_2_sourcetree.pdf)  
 [cli](https://antoniodiaz.github.io/notes/coursera/pdf/04_02_pull_request_2_cli.pdf)
-
-
-
-
-
-
-
-## Week 4
