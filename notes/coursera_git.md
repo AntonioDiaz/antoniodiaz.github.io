@@ -6,10 +6,11 @@ https://www.coursera.org/learn/version-control-with-git/
 
 | -   |      SourceTree      |  Command Line |
 |----------|:-------------:|:------:|
-| Instalation and getting started |  [![Foo](https://img.icons8.com/material-sharp/24/000000/visible.png)](http://google.com.au/) | [![Foo](https://img.icons8.com/material-sharp/24/000000/visible.png)](http://google.com.au/) |
+| **Instalation and getting started** |  [![Foo](https://img.icons8.com/material-sharp/24/000000/visible.png)](https://antoniodiaz.github.io/notes/coursera/pdf/01_01_installation_sourcetree.pdf) | [![Foo](https://img.icons8.com/material-sharp/24/000000/visible.png)](https://antoniodiaz.github.io/notes/coursera/pdf/01_01_installation_cli.pdf) |
 
 
-
+https://antoniodiaz.github.io/notes/coursera/pdf/01_01_installation_cli.pdf
+https://antoniodiaz.github.io/notes/coursera/pdf/01_01_installation_cli.pdf
 
 ## Week 2
 
