@@ -1,5 +1,17 @@
 # Coursera: Version Control with Git
 
+<!-- TOC depthfrom:2 updateonsave:true -->
+
+- [Week 1](#week-1)
+- [Week 2](#week-2)
+- [Week 3](#week-3)
+- [Week 4](#week-4)
+- [CheatSheet](#cheatsheet)
+
+<!-- /TOC -->
+
+
+
 https://www.coursera.org/learn/version-control-with-git
 
 ## Week 1  
@@ -32,3 +44,7 @@ https://www.coursera.org/learn/version-control-with-git
 |-|-|-|
 |**Pull Request I**  |[sourcetree](https://antoniodiaz.github.io/notes/coursera/pdf/04_01_pull_request_1_sourcetree.pdf)  | [cli](https://antoniodiaz.github.io/notes/coursera/pdf/04_01_pull_request_1_cli.pdf)
 |**Pull Request II**  | [sourcetree](https://antoniodiaz.github.io/notes/coursera/pdf/04_02_pull_request_2_sourcetree.pdf)  | [cli](https://antoniodiaz.github.io/notes/coursera/pdf/04_02_pull_request_2_cli.pdf)
+
+## CheatSheet
+
+git log --oneline --graph
