@@ -46,5 +46,12 @@ https://www.coursera.org/learn/version-control-with-git
 |**Pull Request II**  | [sourcetree](https://antoniodiaz.github.io/notes/coursera/pdf/04_02_pull_request_2_sourcetree.pdf)  | [cli](https://antoniodiaz.github.io/notes/coursera/pdf/04_02_pull_request_2_cli.pdf)
 
 ## CheatSheet
-
+* Git references
+```shell
 git log --oneline --graph
+git show 483d
+git show head
+git status
+
+```
+
