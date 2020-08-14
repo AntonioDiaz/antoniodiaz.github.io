@@ -48,10 +48,21 @@ https://www.coursera.org/learn/version-control-with-git
 ## CheatSheet
 * Git references
 ```shell
-git log --oneline --graph
+git log --oneline --graph -1
 git show 483d
 git show head
+git show tag_name
+git show master~~ --> parent parent
+git show master^2 --> second parent num
 git status
-
 ```
 
+* Tags
+````
+git tag --> show all tags in the repository
+git show v0.1
+git tag <tagname> [<commit>] --> create a lightweight tag
+git tag -a [-m <message>] [ -F <file>] <tagname> [<commit>]
+git push <remote> <tagname>
+git push origin --tags
+```
