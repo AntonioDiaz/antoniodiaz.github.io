@@ -58,7 +58,7 @@ git status
 ```
 
 * Tags
-````
+```shell
 git tag --> show all tags in the repository
 git show v0.1
 git tag <tagname> [<commit>] --> create a lightweight tag
