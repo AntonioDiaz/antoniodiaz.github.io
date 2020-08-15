@@ -66,3 +66,13 @@ git tag -a [-m <message>] [ -F <file>] <tagname> [<commit>]
 git push <remote> <tagname>
 git push origin --tags
 ```
+
+* Branches
+```shell
+git branch -a
+//create branch
+git branch <name>
+//checkout branch
+//delete branch label
+git branch -d <name>
+```
