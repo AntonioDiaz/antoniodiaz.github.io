@@ -7,6 +7,10 @@
 - [Week 3](#week-3)
 - [Week 4](#week-4)
 - [CheatSheet](#cheatsheet)
+    - [Git references](#git-references)
+    - [Tags](#tags)
+    - [Branches](#branches)
+    - [Merging](#merging)
 
 <!-- /TOC -->
 
@@ -46,8 +50,8 @@ https://www.coursera.org/learn/version-control-with-git
 |**Pull Request II**  | [sourcetree](https://antoniodiaz.github.io/notes/coursera/pdf/04_02_pull_request_2_sourcetree.pdf)  | [cli](https://antoniodiaz.github.io/notes/coursera/pdf/04_02_pull_request_2_cli.pdf)
 
 ## CheatSheet
-* Git references
-```shell
+### Git references
+``` bash
 git log --oneline --graph -1
 git show 483d
 git show head
@@ -57,8 +61,8 @@ git show master^2 --> second parent num
 git status
 ```
 
-* Tags
-```shell
+### Tags
+``` bash
 git tag --> show all tags in the repository
 git show v0.1
 git tag <tagname> [<commit>] --> create a lightweight tag
@@ -67,12 +71,42 @@ git push <remote> <tagname>
 git push origin --tags
 ```
 
-* Branches
-```shell
-git branch -a
-//create branch
-git branch <name>
-//checkout branch
-//delete branch label
-git branch -d <name>
+### Branches
+``` bash
+git branch --> to see list of branches
+git branch -a --> to see local and remote branches
+git branch <name> --> crate a branch
+git checkout <branch_or_commit>  --> checkout branch
+git checkout -b <branch> --> create and checkout the branch
+```
+
+* delete branch
+``` bash
+git branch -d <branch> --> delete branch label
+git branch -D <branch> --> delete branch with commits not merged
+```
+* undoing an accidental branch delete
+``` bash
+git reflogs --> returns a local list
+git checkout -b <branch> <sha1>
+```
+
+### Merging
+* fast-forward merge, just change the label, only possible if in original branch has not commit after the branch.
+``` bash
+git checkout master
+git merge featureX      //fast-forward default option
+git branch -d featureX
+```
+
+* merge commit
+``` bash
+git checkout master
+git merge --no-ff featureX
+git branch -d featureX
+```
+
+* merge com mit (no fast-forward)
+``` bash
+
 ```
