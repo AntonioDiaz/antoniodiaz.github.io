@@ -11,6 +11,11 @@
     - [Tags](#tags)
     - [Branches](#branches)
     - [Merging](#merging)
+    - [Revolving conflicts](#revolving-conflicts)
+    - [Tracking branches](#tracking-branches)
+    - [Fetch, Pull & Push](#fetch-pull--push)
+    - [Rebasing](#rebasing)
+    - [Rewriting history](#rewriting-history)
 
 <!-- /TOC -->
 
@@ -99,14 +104,26 @@ git merge featureX      //fast-forward default option
 git branch -d featureX
 ```
 
-* merge commit
+* merge commit (no fast-forward)
 ``` bash
 git checkout master
 git merge --no-ff featureX
 git branch -d featureX
 ```
-
-* merge com mit (no fast-forward)
+### Revolving conflicts
 ``` bash
-
+git merge featureX --> conflic
+git merge --abort
+git add <file> --> after resolving conflict
+git commit 
 ```
+
+
+### Tracking branches
+
+### Fetch, Pull & Push
+
+### Rebasing
+
+### Rewriting history
+
