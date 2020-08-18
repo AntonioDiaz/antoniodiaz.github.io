@@ -12,8 +12,8 @@
     - [Branches](#branches)
     - [Merging](#merging)
     - [Revolving conflicts](#revolving-conflicts)
-    - [Tracking branches](#tracking-branches)
-    - [Fetch, Pull & Push](#fetch-pull--push)
+    - [Tracking remote branches](#tracking-remote-branches)
+    - [Network commands: clone, fetch, pull & push](#network-commands-clone-fetch-pull--push)
     - [Rebasing](#rebasing)
     - [Rewriting history](#rewriting-history)
 
@@ -119,11 +119,49 @@ git commit
 ```
 
 
-### Tracking branches
+### Tracking (remote) branches
+``` bash
+git branch --all
+--default remote tracking branch
+git log origin/master --oneline
+git log origin --oneline
+git remote set-head <remote> <branch> --> change default remote tracking branch.
+git remote set-head origin develop
+git log --all
+```
 
-### Fetch, Pull & Push
+### Network commands: clone, fetch, pull & push
+* CLONE: copies a remote repository
+* FETCH: retrieves new objects and references from the remote repository
+``` bash
+git fetch <repository>
+```
+* PULL: fetches and merges commits locally
+pull merging options
+--ff
+--no-ff
+--ff-only
+--rebase [--preserve-merge]
+
+
+* PUSH: adds new objects and references to the remote repository
+```bash
+git push [-u] [<repository>] [<branch>]
+```
 
 ### Rebasing
+<img src="https://antoniodiaz.github.io/images/git/merge_and_rebase.png" width="400"/>  
+
+```bash
+git rebase <upstream>
+
+git checkout featureX
+git rebase master
+// same as
+git rebase master featureX
+
+git rebase --continue
+```
 
 ### Rewriting history
 
