@@ -150,7 +150,7 @@ git push [-u] [<repository>] [<branch>]
 ```
 
 ### Rebasing
-<img src="https://antoniodiaz.github.io/images/git/merge_and_rebase.png" width="400"/>  
+<img src="https://antoniodiaz.github.io/images/git_coursera/merge_and_rebase.png" width="400"/>  
 
 ```bash
 git rebase <upstream>
