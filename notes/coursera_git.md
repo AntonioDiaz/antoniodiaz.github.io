@@ -173,9 +173,22 @@ git commit --amend -m "correct message"
 git commit --amend --no-edit
 ```
 * Interactive rebase (do not use for shared commits)
-<img src="https://antoniodiaz.github.io/images/git_coursera/interactive_rebase.png" width="600"/>  
+<img src="https://antoniodiaz.github.io/images/git_coursera/interactive_rebase.png" width="600"/>   
+<img src="https://antoniodiaz.github.io/images/git_coursera/interactive_rebase_options.png" width="300"/>  
+
+``` bash
+git rebase -i <after-this-commit>
+git commit --amend -m "add fileb.txt"
+git rebase --continue
+```
+
+* Rebase: delete commit
 ``` bash
 git rebase -i <after-this-commit>
 ```
+<img src="https://antoniodiaz.github.io/images/git_coursera/interactive_rebase_delete.png" width="600"/>  
+
+* Squash merge  
+<img src="https://antoniodiaz.github.io/images/git_coursera/interactive_rebase_squash_merge.png" width="600"/>  
 
 
