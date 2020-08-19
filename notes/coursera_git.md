@@ -165,4 +165,17 @@ git rebase --continue
 ```
 
 ### Rewriting history
+* Amending a commit: change the most recent commit (message or files)
+``` bash
+//update last commit message
+git commit --amend -m "correct message"
+//update files but keep commit message
+git commit --amend --no-edit
+```
+* Interactive rebase (do not use for shared commits)
+<img src="https://antoniodiaz.github.io/images/git_coursera/interactive_rebase.png" width="600"/>  
+``` bash
+git rebase -i <after-this-commit>
+```
+
 
