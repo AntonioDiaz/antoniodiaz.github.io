@@ -1,6 +1,7 @@
 # Coursera: Version Control with Git
 
-<!-- TOC depthfrom:2 updateonsave:true -->
+<h2> Index</h2>
+<!-- TOC depthFrom:2 updateOnSave:true -->
 
 - [Week 1](#week-1)
 - [Week 2](#week-2)
@@ -12,14 +13,12 @@
     - [Branches](#branches)
     - [Merging](#merging)
     - [Revolving conflicts](#revolving-conflicts)
-    - [Tracking remote branches](#tracking-remote-branches)
+    - [Tracking (remote) branches](#tracking-remote-branches)
     - [Network commands: clone, fetch, pull & push](#network-commands-clone-fetch-pull--push)
     - [Rebasing](#rebasing)
     - [Rewriting history](#rewriting-history)
 
 <!-- /TOC -->
-
-
 
 https://www.coursera.org/learn/version-control-with-git
 
