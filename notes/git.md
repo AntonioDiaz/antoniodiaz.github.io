@@ -1,4 +1,5 @@
  # GIT HELP
+ <h2> Index </h2>
 <!-- TOC START min:2 max:4 link:true asterisk:false update:true -->
 - [Intro](#intro)
     - [Commit](#commit)
