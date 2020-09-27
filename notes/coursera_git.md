@@ -82,6 +82,7 @@ git branch -a --> to see local and remote branches
 git branch <name> --> crate a branch
 git checkout <branch_or_commit>  --> checkout branch
 git checkout -b <branch> --> create and checkout the branch
+git push origin --delete auth   --> delete branches
 ```
 
 * delete branch
