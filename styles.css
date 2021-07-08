@@ -103,3 +103,8 @@
     .image_centered {
         margin-left: auto; margin-right: auto; display: block;
     }
+
+    .div_center {
+        display: flex;
+        align-items: center;
+    }
