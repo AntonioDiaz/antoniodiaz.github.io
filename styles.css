@@ -72,6 +72,10 @@
         color: #1abc9c !important;
     }
 
+    .resume_font {
+        font-size: large;
+    }
+
     .white_links a:link {
         color: #ffffff;
         background-color: transparent;
