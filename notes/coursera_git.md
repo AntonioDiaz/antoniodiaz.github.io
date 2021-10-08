@@ -1,19 +1,20 @@
 # Coursera: Version Control with Git
 
 <h2> Index</h2>
-<!-- TOC depthFrom:2 updateOnSave:true -->
+<!-- TOC depthfrom:2 updateonsave:true -->
 
 - [Week 1](#week-1)
 - [Week 2](#week-2)
 - [Week 3](#week-3)
 - [Week 4](#week-4)
 - [CheatSheet](#cheatsheet)
+    - [Log formats](#log-formats)
     - [Git references](#git-references)
     - [Tags](#tags)
     - [Branches](#branches)
     - [Merging](#merging)
     - [Revolving conflicts](#revolving-conflicts)
-    - [Tracking (remote) branches](#tracking-remote-branches)
+    - [Tracking remote branches](#tracking-remote-branches)
     - [Network commands: clone, fetch, pull & push](#network-commands-clone-fetch-pull--push)
     - [Rebasing](#rebasing)
     - [Rewriting history](#rewriting-history)
@@ -54,6 +55,14 @@ https://www.coursera.org/learn/version-control-with-git
 |**Pull Request II**  | [sourcetree](https://antoniodiaz.github.io/notes/coursera/pdf/04_02_pull_request_2_sourcetree.pdf)  | [cli](https://antoniodiaz.github.io/notes/coursera/pdf/04_02_pull_request_2_cli.pdf)
 
 ## CheatSheet
+
+### Log formats
+```bash
+git log --graph --pretty=format:"%C(yellow)%h%x09%Creset%C(cyan)%C(bold)%ad%Creset %C(yellow)%cn%Creset  %C(green)%Creset %s" --date=default
+git log --graph --pretty=format:'%C(auto)%h%d (%cr) %cn <%ce> %s'
+git log --name-only --oneline
+```
+
 ### Git references
 ``` bash
 git log --oneline --graph -1
@@ -110,6 +119,7 @@ git checkout master
 git merge --no-ff featureX
 git branch -d featureX
 ```
+
 ### Revolving conflicts
 ``` bash
 git merge featureX --> conflic
