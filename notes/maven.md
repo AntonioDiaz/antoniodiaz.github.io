@@ -49,12 +49,21 @@ Default maven seccion:
     * `mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false`
 * __Lifecycle__: an ordered sequence of phase
 * __Phase__: is a step in the build lifecycle  
-| Phase | 2 |
+
+### Default lifecycle phases 
+|  |  |
 |---|---|
-| validate | 2 |
-| compile | 2 |
-| test | 2 |
-| package | 2 |
-| integration-test | 2 |
-| verify | 2 |
-| deploy | 2 |
+| validate | checks the correctness of the project |
+| compile | compiles the provided source code into binary artifacts |
+| test | executes unit tests |
+| package | packages compiled code into an archive file |
+| integration-test | executes additional tests, which require the packaging |
+| verify | checks if the package is valid |
+| install | installs the package file into the local Maven repository |
+| deploy | deploys the package file to a remote server or repository |
+
+### Two other Maven lifecycles
+|  |  |
+|---|---|
+| clean | cleans up artifacts created by prior builds |
+| site | generates site documentation for this project |
