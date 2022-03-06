@@ -65,33 +65,41 @@ git merge master
 ## Moving around in Git
 
 ### HEAD
-* First we have to talk about "HEAD". HEAD is the symbolic name for the currently checked out commit -- it's essentially what commit you're working on top of.
+* HEAD is the symbolic name for the currently checked out commit -- it's essentially what commit you're working on top of.
 
 * HEAD always points to the most recent commit which is reflected in the working tree. Most git commands which make changes to the working tree will start by changing HEAD.
 
 * Normally HEAD points to a branch name (like bugFix). When you commit, the status of bugFix is altered and this change is visible through HEAD.
 
-* Deteaching HEAD:
->git checkout C1  
-<img src="https://antoniodiaz.github.io/images/git/git_head_01.jpg" width="400"/>  
+* Deteaching HEAD:  
+`git checkout C1`  
+<img src="https://antoniodiaz.github.io/images/git/git_head_01.jpg" width="600"/>  
 
 ### Relative Refs
-* Moving upwards one commit at a time with ^
->git checkout master^  
-<img src="https://antoniodiaz.github.io/images/git/git_head_02.jpg"   width="400"/>  
->git checkout C3  
+* Moving upwards one commit at a time with ^  
+```
+git checkout master^
+```  
+
+<img src="https://antoniodiaz.github.io/images/git/git_head_02.jpg"   width="600"/>  
+
+```
+git checkout C3  
 git checkout HEAD^  
 git checkout HEAD^  
 git checkout HEAD^  
-<img src="https://antoniodiaz.github.io/images/git/git_head_03.jpg" width="400"/>  
+```
+<img src="https://antoniodiaz.github.io/images/git/git_head_03.jpg" width="600"/>  
+
 * Moving upwards a number of times with ~num  
->git checkout HEAD~4  
-<img src="https://antoniodiaz.github.io/images/git/git_head_04.jpg" width="400"/>  
+`git checkout HEAD~4`  
+
+<img src="https://antoniodiaz.github.io/images/git/git_head_04.jpg" width="600"/>  
 
 ### Move branch
 * One of the most common ways I use relative refs is to move branches around. You can directly reassign a branch to a commit with the -f option.  
 >git branch -f master HEAD~3  
-<img src="https://antoniodiaz.github.io/images/git/git_head_05.jpg" width="400"/>  
+<img src="https://antoniodiaz.github.io/images/git/git_head_05.jpg" width="600"/>  
 
 ## Reversing Changes
 * There are many ways to reverse changes in Git. And just like committing, reversing changes in Git has both a low-level component (staging individual files or chunks) and a high-level component (how the changes are actually reversed).  
@@ -99,7 +107,7 @@ git checkout HEAD^
 ### Git Reset
 * *git reset* reverts changes by moving a branch reference backwards in time to an older commit. In this sense you can think of it as "rewriting history;" git reset will move a branch backwards as if the commit had never been made in the first place.  
 
->git reset HEAD~4  
+`git reset HEAD~4`  
 <img src="https://antoniodiaz.github.io/images/git/git_reset_01.jpg" width="400"/>  
 
 ### Git Revert
