@@ -1,6 +1,7 @@
- # GIT HELP
+# GIT HELPP
  <h2> Index </h2>
 <!-- TOC START min:2 max:4 link:true asterisk:false update:true -->
+
 - [Intro](#intro)
     - [Commit](#commit)
     - [Merge](#merge)
@@ -62,6 +63,7 @@ git merge master
 <img src="https://antoniodiaz.github.io/images/git/git_rebase_02.jpg" width="400"/>  
 
 ## Moving around in Git
+
 ### HEAD
 * First we have to talk about "HEAD". HEAD is the symbolic name for the currently checked out commit -- it's essentially what commit you're working on top of.
 
@@ -109,6 +111,7 @@ git checkout HEAD^
 
 
 ## Moving Work Around
+
 ### Cherry-pick
 * Syntax: *git cherry-pick Commit1 Commit2 ...*
 * It's a very straightforward way of saying that you would like to copy a series of commits below your current location (HEAD). I personally love cherry-pick because there is very little magic involved and it's easy to understand.  
@@ -131,6 +134,7 @@ git checkout HEAD^
 <img src="https://antoniodiaz.github.io/images/git/git_interactive_rebase_01.jpg" width="400"/>
 
 ## A Mixed Bag
+
 ### Grabbing Just 1 Commit
 * Here's a development situation that often happens: I'm trying to track down a bug but it is quite elusive. In order to aid in my detective work, I put in a few debug commands and a few print statements.
 * All of these debugging / print statements are in their own commits. Finally I track down the bug, fix it, and rejoice!
@@ -183,10 +187,12 @@ Whereas *git describe side* would output:
 v2_1_gC4  
 
 ## Advanced Topics
+
 ### Rebasing over 9000 times
 * Man, we have a lot of branches going on here! Let's rebase all the work from these branches onto master.
 * Upper management is making this a bit trickier though -- they want the commits to all be in **sequential order**. So this means that our final tree should have C7' at the bottom, C6' above that, and so on, all in order.
 * If you mess up along the way, feel free to use reset to start over again. Be sure to check out our solution and see if you can do it in fewer commands!
+
 ### Multiple parents
 * Like the ~ modifier, the ^ modifier also accepts an optional number after it.
 * Rather than specifying the number of generations to go back (what ~ takes), the modifier on ^ specifies which parent reference to follow from a merge commit. Remember that merge commits have multiple parents, so the path to choose is ambiguous.
