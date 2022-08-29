@@ -1,6 +1,15 @@
 # Master Spring Framework
 
+* Course Udemy  
 https://www.udemy.com/course/spring-springboot-jpa-hibernate-zero-to-master/  
+
+* Oficial Repo  
 https://github.com/eazybytes/spring  
-https://drive.google.com/file/d/1Fmuauwjwxr2vkPrsC7-G5gRV4f9nbU8V/view?usp=sharing  
+
+* PDF Notes  
+  https://drive.google.com/drive/folders/1-6rzT-rA3S02RLwcJ-v6NUGi5DpfFT7Q?usp=sharing
+
+
+<img src="https://antoniodiaz.github.io/images/spring_udemy_master.png" width="600"/> 
+
 https://start.spring.io/
