@@ -38,9 +38,10 @@ https://github.com/eazybytes/microservices-with-spring-sectionwise-code
 https://drive.google.com/file/d/1JXyE1jOX0GEd1WWm5ShxKjkW2XlqBEsM/view?usp=share_link
 
 ## 2. Microservices & Spring
-https://drive.google.com/file/d/1XFJ0OeUE2yzJawEmrO-zUfS4QxcU9sb5/view?usp=sharing
+https://drive.google.com/file/d/1M7bqXiCUi1OzNvoClEVUEdqlarESYfiv/view?usp=share_link
 
 ## 3. Right sizing Microservices & Identifying boundaries.
+https://drive.google.com/file/d/1TAwGoKeWqnbb7umSPZyaTHrsJSN16tfK/view?usp=share_link
 
 ## 4. Getting started with creation of accounts, loands and cards microservices.
 
