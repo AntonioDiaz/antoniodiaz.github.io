@@ -44,8 +44,10 @@ https://drive.google.com/file/d/1M7bqXiCUi1OzNvoClEVUEdqlarESYfiv/view?usp=share
 https://drive.google.com/file/d/1TAwGoKeWqnbb7umSPZyaTHrsJSN16tfK/view?usp=share_link
 
 ## 4. Getting started with creation of accounts, loands and cards microservices.
+Spring Boot review.
 
 ## 5. Who to build, deploy, scale our microservices using Docker.
+https://drive.google.com/file/d/1z5gSyhPKgY54PXpMP3Z89nfuDROWhP6t/view?usp=share_link
 
 ## 6. Deep Dive on Cloud Native Apps & 12factors.
 
