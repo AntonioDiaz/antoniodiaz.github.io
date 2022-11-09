@@ -119,13 +119,13 @@ ENTRYPOINT ["java","-jar","/accounts-0.0.1-SNAPSHOT.jar"]
   `mvn spring-boot:build-image`
 
 ### Docker hub
-https://hub.docker.com/
+https://hub.docker.com/  
 `docker push docker.io/adiazarroyo/accounts:latest`
+<img src="https://antoniodiaz.github.io/images/microservices/docker_hub.png" width="600"/>  
 
 ### Docker Compose
-
-* https://docs.docker.com/compose/gettingstarted/
-
+* https://docs.docker.com/compose/gettingstarted/  
+  
 * Start and stop all the microservices with a single command.
   * `docker-compose up`
   * `docker-compose down`  
