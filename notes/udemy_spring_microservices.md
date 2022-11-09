@@ -49,6 +49,12 @@ Spring Boot review.
 ## 5. Who to build, deploy, scale our microservices using Docker.
 https://drive.google.com/file/d/1z5gSyhPKgY54PXpMP3Z89nfuDROWhP6t/view?usp=share_link
 
+Using Docker
+* Virtual Machines VS Containers
+<img src="https://antoniodiaz.github.io/images/microservices/microservices_virtualmachines_vs_containers.png" width="600"/>  
+
+* 
+
 ## 6. Deep Dive on Cloud Native Apps & 12factors.
 
 ## 7. Configurations managements in microservices.
@@ -74,5 +80,7 @@ https://drive.google.com/file/d/1z5gSyhPKgY54PXpMP3Z89nfuDROWhP6t/view?usp=share
 ## 17. Securing microservices using OAuth2 client credentials grant flow.
 
 ## 18. Securing microservices using OAuth2 client Authorization code grant flow.
+
 ## 19. Introduction to K8s ingress & service Mesh (Istio).
+
 ## 20. Thank you & congratulations.
