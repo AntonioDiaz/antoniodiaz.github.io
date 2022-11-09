@@ -7,7 +7,7 @@
 - [2. Microservices & Spring](#2-microservices--spring)
 - [3. Right sizing Microservices & Identifying boundaries.](#3-right-sizing-microservices--identifying-boundaries)
 - [4. Getting started with creation of accounts, loands and cards microservices.](#4-getting-started-with-creation-of-accounts-loands-and-cards-microservices)
-- [5. Who to build, deploy, scale our microservices using Docker.](#5-who-to-build-deploy-scale-our-microservices-using-docker)
+- [5. Docker: who to build, deploy, scale our microservices using.](#5-docker-who-to-build-deploy-scale-our-microservices-using)
 - [6. Deep Dive on Cloud Native Apps & 12factors.](#6-deep-dive-on-cloud-native-apps--12factors)
 - [7. Configurations managements in microservices.](#7-configurations-managements-in-microservices)
 - [8. Service discovery & registration.](#8-service-discovery--registration)
@@ -46,7 +46,7 @@ https://drive.google.com/file/d/1TAwGoKeWqnbb7umSPZyaTHrsJSN16tfK/view?usp=share
 ## 4. Getting started with creation of accounts, loands and cards microservices.
 Spring Boot review.
 
-## 5. Who to build, deploy, scale our microservices using Docker.
+## 5. Docker: who to build, deploy, scale our microservices using.
 https://drive.google.com/file/d/1z5gSyhPKgY54PXpMP3Z89nfuDROWhP6t/view?usp=share_link
 
 Using Docker
@@ -55,6 +55,23 @@ Using Docker
 
 * Docker architecture
 <img src="https://antoniodiaz.github.io/images/microservices/intro_docker.png" width="600"/>  
+
+* Command to create docker image:
+Create a file named `Dockerfile` (without extension) on root folder
+Example:
+```
+  #Start with a base image containing Java runtime
+FROM openjdk:17-jdk-slim as build
+
+#Information around who maintains the image
+MAINTAINER eazybytes.com
+
+# Add the application's jar to the container
+COPY target/accounts-0.0.1-SNAPSHOT.jar accounts-0.0.1-SNAPSHOT.jar
+
+#execute the application
+ENTRYPOINT ["java","-jar","/accounts-0.0.1-SNAPSHOT.jar"]
+```
 
 
 ## 6. Deep Dive on Cloud Native Apps & 12factors.
