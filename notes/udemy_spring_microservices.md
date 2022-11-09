@@ -8,6 +8,11 @@
 - [3. Right sizing Microservices & Identifying boundaries.](#3-right-sizing-microservices--identifying-boundaries)
 - [4. Getting started with creation of accounts, loands and cards microservices.](#4-getting-started-with-creation-of-accounts-loands-and-cards-microservices)
 - [5. Docker: who to build, deploy, scale our microservices using.](#5-docker-who-to-build-deploy-scale-our-microservices-using)
+  - [Docker images](#docker-images)
+  - [Docker commands](#docker-commands)
+  - [Buildpacks](#buildpacks)
+  - [Docker hub](#docker-hub)
+  - [Docker Compose](#docker-compose)
 - [6. Deep Dive on Cloud Native Apps & 12factors.](#6-deep-dive-on-cloud-native-apps--12factors)
 - [7. Configurations managements in microservices.](#7-configurations-managements-in-microservices)
 - [8. Service discovery & registration.](#8-service-discovery--registration)
@@ -56,7 +61,7 @@ Using Docker
 * Docker architecture
 <img src="https://antoniodiaz.github.io/images/microservices/intro_docker.png" width="600"/>  
 
-* Command to create docker image:
+### Docker images
 Create a file named `Dockerfile` (without extension) on root folder
 Example:
 ```dockerfile
@@ -71,6 +76,92 @@ COPY target/accounts-0.0.1-SNAPSHOT.jar accounts-0.0.1-SNAPSHOT.jar
 
 #execute the application
 ENTRYPOINT ["java","-jar","/accounts-0.0.1-SNAPSHOT.jar"]
+```
+### Docker commands
+`mvn clean install` -> generate jar file  
+`docker images`-> show images   
+`docker build . -t eazybytes/accounts`  
+`docker image inspect 706`  
+`docker run -p 8080:8080 eazybytes/accounts`  
+`docker ps` -> show the containers  
+`docker ps -a` -> show the containers even stoped  
+`docker logs -f 706`  
+`docker stop 706`  
+`docker kill 706` -> stop instantly  
+`docker start 706 xxx`  
+`docker pause xxx`  
+`docker unpause xxx`  
+`docker container inspect 706`  
+`docker stats`  
+`docker rm xxx` -> remove container 
+
+### Buildpacks
+* Create an image without any docker definition.
+* https://buildpacks.io/
+* Example:
+  * Update `pom.xml`
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+                <image>
+                    <name>eazybytes/${project.artifactId}</name>
+                </image>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+```  
+* Run command  
+  `mvn spring-boot:build-image`
+
+### Docker hub
+https://hub.docker.com/
+`docker push docker.io/adiazarroyo/accounts:latest`
+
+### Docker Compose
+
+* https://docs.docker.com/compose/gettingstarted/
+
+* Start and stop all the microservices with a single command.
+  * `docker-compose up`
+  * `docker-compose down`  
+
+* Example file name `docker-compose.yml`  
+```yml
+version: "3.8"
+
+services:
+
+  accounts:
+    image: eazybytes/accounts:latest
+    mem_limit: 700m
+    ports:
+      - "8080:8080"
+    networks:
+      - eazybank-network
+    
+  loans:
+    image: eazybytes/loans:latest
+    mem_limit: 700m
+    ports:
+      - "8090:8090"
+    networks:
+      - eazybank-network
+    
+  cards:
+    image: eazybytes/cards:latest
+    mem_limit: 700m
+    ports:
+      - "9000:9000"
+    networks:
+      - eazybank-network
+    
+networks:
+  eazybank-network:
 ```
 
 
