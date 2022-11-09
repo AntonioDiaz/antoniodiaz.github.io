@@ -53,7 +53,9 @@ Using Docker
 * Virtual Machines VS Containers
 <img src="https://antoniodiaz.github.io/images/microservices/microservices_virtualmachines_vs_containers.png" width="600"/>  
 
-* 
+* Docker architecture
+<img src="https://antoniodiaz.github.io/images/microservices/intro_docker.png" width="600"/>  
+
 
 ## 6. Deep Dive on Cloud Native Apps & 12factors.
 
