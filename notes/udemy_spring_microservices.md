@@ -59,7 +59,7 @@ Using Docker
 * Command to create docker image:
 Create a file named `Dockerfile` (without extension) on root folder
 Example:
-```
+```dockerfile
   #Start with a base image containing Java runtime
 FROM openjdk:17-jdk-slim as build
 
