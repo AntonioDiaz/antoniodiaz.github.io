@@ -168,6 +168,7 @@ networks:
 
 ## 6. Deep Dive on Cloud Native Apps & 12factors.
 https://drive.google.com/file/d/1LkgLX0OHsE9qKtLyVgNx5rI_hf575_FT/view?usp=share_link
+https://12factor.net/
 
 ## 7. Configurations managements in microservices.
 https://drive.google.com/file/d/1z9hP2WdREh_hdKb1eHcESUJiCe6NAzHa/view?usp=share_link
