@@ -120,7 +120,8 @@ ENTRYPOINT ["java","-jar","/accounts-0.0.1-SNAPSHOT.jar"]
 
 ### Docker hub
 https://hub.docker.com/  
-`docker push docker.io/adiazarroyo/accounts:latest`
+`docker push docker.io/adiazarroyo/accounts:latest`  
+
 <img src="https://antoniodiaz.github.io/images/microservices/docker_hub.png" width="600"/>  
 
 ### Docker Compose
@@ -166,18 +167,25 @@ networks:
 
 
 ## 6. Deep Dive on Cloud Native Apps & 12factors.
+https://drive.google.com/file/d/1LkgLX0OHsE9qKtLyVgNx5rI_hf575_FT/view?usp=share_link
 
 ## 7. Configurations managements in microservices.
+https://drive.google.com/file/d/1z9hP2WdREh_hdKb1eHcESUJiCe6NAzHa/view?usp=share_link
 
 ## 8. Service discovery & registration.
+https://drive.google.com/file/d/1lhIo4iszxHKwiI5yr5y0wcCmIhKYoqj7/view?usp=share_link
 
 ## 9. Making microservices resilent.
+https://drive.google.com/file/d/1AbEmLa_Q-jQSPjqneUPhIg_Ehpiz-oYD/view?usp=share_link
 
 ## 10. Handling rounting & cross cutting concerns in microservices.
+https://drive.google.com/file/d/1fytRJcWtI4ytSZA8958dIrsdNNb99nQT/view?usp=share_link
 
 ## 11. Distributed tracing & log aggregation in microservices.
+https://drive.google.com/file/d/1YruqrgcYmyjzaGfYantxM7ZK0e2lwh_F/view?usp=share_link
 
 ## 12. Monitoring microservices metrics & health.
+https://drive.google.com/file/d/115DU7wwXAH_6TEIz1akk9jxzko2YCsgl/view?usp=share_link 
 
 ## 13. Automatic self-healing, scaling, deployments using Kubernetes.
 
