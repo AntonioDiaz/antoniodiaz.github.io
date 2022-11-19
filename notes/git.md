@@ -60,10 +60,10 @@
 
 * While this sounds confusing, the advantage of rebasing is that it can be used to make a nice linear sequence of commits. The commit log / history of the repository will be a lot cleaner if only rebasing is allowed.  
 
-`git rebase master`  
+  `git rebase master`  
 <img src="https://antoniodiaz.github.io/images/git/git_rebase_01.jpg" width="400"/>  
 
-`git rebase bugFix`  
+  `git rebase bugFix`  
 <img src="https://antoniodiaz.github.io/images/git/git_rebase_02.jpg" width="400"/>  
 
 ## Moving around in Git
@@ -105,7 +105,7 @@ git checkout HEAD^
 
 ### Move branch
 * One of the most common ways I use relative refs is to move branches around. You can directly reassign a branch to a commit with the -f option.  
->git branch -f master HEAD~3  
+`git branch -f master HEAD~3`  
 <img src="https://antoniodiaz.github.io/images/git/git_head_05.jpg" width="600"/>  
 
 ## Reversing Changes
@@ -113,15 +113,15 @@ git checkout HEAD^
 
 ### Git Reset
 * *git reset* reverts changes by moving a branch reference backwards in time to an older commit. In this sense you can think of it as "rewriting history;" git reset will move a branch backwards as if the commit had never been made in the first place.  
-
-`git reset HEAD~4`  
+  
+  `git reset HEAD~4`  
 <img src="https://antoniodiaz.github.io/images/git/git_reset_01.jpg" width="400"/>  
 
 ### Git Revert
 * While resetting works great for local branches on your own machine, its method of "rewriting history" doesn't work for remote branches that others are using.
 * In order to reverse changes and share those reversed changes with others, we need to use git revert. Let's see it in action.  
 
->git revert HEAD  
+  `git revert HEAD`  
 <img src="https://antoniodiaz.github.io/images/git/git_revert_01.jpg" width="400"/>  
 
 
@@ -130,8 +130,8 @@ git checkout HEAD^
 ### Cherry-pick
 * Syntax: *git cherry-pick Commit1 Commit2 ...*
 * It's a very straightforward way of saying that you would like to copy a series of commits below your current location (HEAD). I personally love cherry-pick because there is very little magic involved and it's easy to understand.  
-
-> git cherry-pick C2 C4  
+  
+  `git cherry-pick C2 C4`  
 <img src="https://antoniodiaz.github.io/images/git/git_cherry_pick_01.jpg" width="400"/>  
 
 ### Git Interactive Rebase
