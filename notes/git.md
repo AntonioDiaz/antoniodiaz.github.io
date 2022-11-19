@@ -1,4 +1,4 @@
-# GIT HELPP
+# GIT REFERENCE
  <h2> Index </h2>
 <!-- TOC START min:2 max:4 link:true asterisk:false update:true -->
 
@@ -34,22 +34,24 @@
 `git commit` 
 
 **Branches and Merging**
-* Create branch:
-> git branch newImage
-* Commit on branch
-> git ckeckout newImage  
-git commit  
-* Branch: create and checkout
-> git checkout -b [yourbranchname]
+* Create branch  
+`git branch newImage`
+
+* Commit on branch  
+`git ckeckout newImage`  
+`git commit`  
+
+* Branch: create and checkout  
+`git checkout -b [yourbranchname]`
 
 ### Merge
-* Step 1
->git merge bugFix  
+* Step 1  
+`git merge bugFix`  
 <img src="https://antoniodiaz.github.io/images/git/git_merge_01.jpg" width="400"/>  
 
-* Step 2
->git checkout bugFix   
-git merge master  
+* Step 2  
+`git checkout bugFix`  
+`git merge master`  
 <img src="https://antoniodiaz.github.io/images/git/git_merge_02.jpg" width="400"/>
 
 **Rebase**
