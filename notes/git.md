@@ -3,35 +3,35 @@
 <!-- TOC START min:2 max:4 link:true asterisk:false update:true -->
 
 - [Intro](#intro)
-    - [Commit](#commit)
-    - [Merge](#merge)
+  - [Commit](#commit)
+  - [Merge](#merge)
 - [Moving around in Git](#moving-around-in-git)
-    - [HEAD](#head)
-    - [Relative Refs](#relative-refs)
-    - [Move branch](#move-branch)
+  - [HEAD](#head)
+  - [Relative Refs](#relative-refs)
+  - [Move branch](#move-branch)
 - [Reversing Changes](#reversing-changes)
-    - [Git Reset](#git-reset)
-    - [Git Revert](#git-revert)
+  - [Git Reset](#git-reset)
+  - [Git Revert](#git-revert)
 - [Moving Work Around](#moving-work-around)
-    - [Cherry-pick](#cherry-pick)
-    - [Git Interactive Rebase](#git-interactive-rebase)
+  - [Cherry-pick](#cherry-pick)
+  - [Git Interactive Rebase](#git-interactive-rebase)
 - [A Mixed Bag](#a-mixed-bag)
-    - [Grabbing Just 1 Commit](#grabbing-just-1-commit)
-    - [Juggling Commits 1](#juggling-commits-1)
-    - [Juggling Commits 2](#juggling-commits-2)
-    - [Git Tags](#git-tags)
-    - [Git Describe](#git-describe)
+  - [Grabbing Just 1 Commit](#grabbing-just-1-commit)
+  - [Juggling Commits 1](#juggling-commits-1)
+  - [Juggling Commits 2](#juggling-commits-2)
+  - [Git Tags](#git-tags)
+  - [Git Describe](#git-describe)
 - [Advanced Topics](#advanced-topics)
-    - [Rebasing over 9000 times](#rebasing-over-9000-times)
-    - [Multiple parents](#multiple-parents)
-    - [Branch Spaghetti](#branch-spaghetti)
+  - [Rebasing over 9000 times](#rebasing-over-9000-times)
+  - [Multiple parents](#multiple-parents)
+  - [Branch Spaghetti](#branch-spaghetti)
 <!-- TOC END -->
 
 ## Intro
 * https://learngitbranching.js.org/
 
 ### Commit
->git commit  
+`git commit` 
 
 **Branches and Merging**
 * Create branch:
