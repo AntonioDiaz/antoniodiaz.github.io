@@ -18,6 +18,7 @@
   - [Network commands: clone, fetch, pull & push](#network-commands-clone-fetch-pull--push)
   - [Rebasing](#rebasing)
   - [Rewriting history](#rewriting-history)
+  - [Aliases](#aliases)
 
 <!-- /TOC -->
 
@@ -201,10 +202,12 @@ git rebase -i <after-this-commit>
 * Squash merge  
 <img src="https://antoniodiaz.github.io/images/git_coursera/interactive_rebase_squash_merge.png" width="600"/>  
 
-* Aliases
-`git config --global alias.lg 'log --graph --pretty=format:"%C(yellow)%h%x09%Creset%C(cyan)%C(bold)%ad%Creset %C(yellow)%cn%Creset  %C(green)%Creset %s" --date=default'`
+### Aliases
+* Create log alias  
+  `git config --global alias.lg 'log --graph --pretty=format:"%C(yellow)%h%x09%Creset%C(cyan)%C(bold)%ad%Creset %C(yellow)%cn%Creset  %C(green)%Creset %s" --date=default'`
 
-`git config --global alias.lgf 'git log --name-only --oneline'`
+* Create log alias to show files  
+  `git config --global alias.lgf 'log --pretty=oneline --graph --name-status'`
 
 * Keep logs on console
 `git config --global pager.log false`

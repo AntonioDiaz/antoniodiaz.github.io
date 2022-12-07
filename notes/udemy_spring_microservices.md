@@ -177,6 +177,8 @@ https://drive.google.com/file/d/1z9hP2WdREh_hdKb1eHcESUJiCe6NAzHa/view?usp=share
 ## 8. Service discovery & registration.
 https://drive.google.com/file/d/1lhIo4iszxHKwiI5yr5y0wcCmIhKYoqj7/view?usp=share_link
 
+<img src="https://antoniodiaz.github.io/images/microservices/service_discovery.png" width="600"/>  
+
 ## 9. Making microservices resilent.
 https://drive.google.com/file/d/1AbEmLa_Q-jQSPjqneUPhIg_Ehpiz-oYD/view?usp=share_link
 
