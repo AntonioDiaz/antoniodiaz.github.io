@@ -17,6 +17,7 @@
 - [7. Configurations managements in microservices.](#7-configurations-managements-in-microservices)
   - [Reading properties from local](#reading-properties-from-local)
   - [Reading properties from repository](#reading-properties-from-repository)
+  - [Config microservice to read properties from config server](#config-microservice-to-read-properties-from-config-server)
 - [8. Service discovery \& registration.](#8-service-discovery--registration)
 - [9. Making microservices resilent.](#9-making-microservices-resilent)
 - [10. Handling rounting \& cross cutting concerns in microservices.](#10-handling-rounting--cross-cutting-concerns-in-microservices)
@@ -213,7 +214,51 @@ spring.cloud.config.server.git.default-label=master
 spring.cloud.config.server.git.search-paths=config
 ```
 
+### Config microservice to read properties from config server
+* Adding dependencies to `pom.xml`
+  * Spring Cloud
+  * Spring Cloud Config
+```xml
+<dependencyManagement>
+  <dependencies>
+      ...
+      <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-test</artifactId>
+          <scope>test</scope>
+      </dependency>
+  </dependencies>
+  <dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>${spring-cloud.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+  ```
 
+* Adding properties
+```properties
+spring.application.name=accounts
+spring.profiles.active=prod
+spring.config.import=optional:configserver:http://localhost:8071
+```
+
+* Create bean to store the properties:
+```java
+@Configuration
+@ConfigurationProperties(prefix = "accounts")
+@Getter
+@Setter
+@ToString
+public class AccountsServiceConfig {
+  private String welcome;
+}
+```  
 
 ## 8. Service discovery & registration.
 https://drive.google.com/file/d/1lhIo4iszxHKwiI5yr5y0wcCmIhKYoqj7/view?usp=share_link
