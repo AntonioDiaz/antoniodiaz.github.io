@@ -190,7 +190,7 @@ Steps:
  ```
 
 1. Create `config` folder under `resources`  
-<img src="https://antoniodiaz.github.io/images/microservices/config_server_files.png" width="600"/>  
+<img src="https://antoniodiaz.github.io/images/microservices/config_server_files.png" width="300"/>  
 
 1. Update `application.properties`  
 ```properties
