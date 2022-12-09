@@ -179,9 +179,17 @@ Steps:
 <img src="https://antoniodiaz.github.io/images/microservices/config_server.png" width="600"/> 
 
 2. Add annotation: `@EnableConfigServer`  
-https://github.com/AntonioDiaz/playing_spring_microservices/blob/e7667126b63bb8d6bc67f93eeb58b2c06b1486c3/configserver/src/main/java/com/adiaz/configserver/ConfigServerApplication.java#L7-L15
+```java   
+ @SpringBootApplication 
+ @EnableConfigServer 
+ public class ConfigServerApplication { 
+   public static void main(String[] args) { 
+     SpringApplication.run(ConfigServerApplication.class, args); 
+   } 
+ } 
+ ```
 
-3. Create `config` folder under `resources`  
+1. Create `config` folder under `resources`  
 <img src="https://antoniodiaz.github.io/images/microservices/config_server_files.png" width="600"/>  
 
 1. Update `application.properties`  
