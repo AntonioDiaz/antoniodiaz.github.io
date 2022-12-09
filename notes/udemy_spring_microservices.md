@@ -15,6 +15,8 @@
   - [Docker Compose](#docker-compose)
 - [6. Deep Dive on Cloud Native Apps \& 12factors.](#6-deep-dive-on-cloud-native-apps--12factors)
 - [7. Configurations managements in microservices.](#7-configurations-managements-in-microservices)
+  - [Reading properties from local](#reading-properties-from-local)
+  - [Reading properties from repository](#reading-properties-from-repository)
 - [8. Service discovery \& registration.](#8-service-discovery--registration)
 - [9. Making microservices resilent.](#9-making-microservices-resilent)
 - [10. Handling rounting \& cross cutting concerns in microservices.](#10-handling-rounting--cross-cutting-concerns-in-microservices)
@@ -188,19 +190,29 @@ Steps:
    } 
  } 
  ```
-
-1. Create `config` folder under `resources`  
+### Reading properties from local
+* Create `config` folder under `resources`  
 <img src="https://antoniodiaz.github.io/images/microservices/config_server_files.png" width="300"/>  
 
-1. Update `application.properties`  
+* Update `application.properties`  
 ```properties
-spring.application.name=configserver
 spring.profiles.active=native
-#spring.profile.active=git
 spring.cloud.config.server.native.search-locations=classpath:/config
-server.port=8071
 ```
- 
+
+### Reading properties from repository
+* Create a repository on Github:  
+<img src="https://antoniodiaz.github.io/images/microservices/config_server_git.png" width="300"/>  
+
+* Update `application.properties`  
+```properties
+spring.profiles.active=git
+spring.cloud.config.server.git.uri=https://github.com/AntonioDiaz/playing_spring_microservices.git
+spring.cloud.config.server.git.clone-on-start=true
+spring.cloud.config.server.git.default-label=master
+spring.cloud.config.server.git.search-paths=config
+```
+
 
 
 ## 8. Service discovery & registration.
