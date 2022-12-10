@@ -18,6 +18,8 @@
   - [Reading properties from local](#reading-properties-from-local)
   - [Reading properties from repository](#reading-properties-from-repository)
   - [Config microservice to read properties from config server](#config-microservice-to-read-properties-from-config-server)
+  - [Refresh properties](#refresh-properties)
+  - [Encryption \& decryption properties](#encryption--decryption-properties)
 - [8. Service discovery \& registration.](#8-service-discovery--registration)
 - [9. Making microservices resilent.](#9-making-microservices-resilent)
 - [10. Handling rounting \& cross cutting concerns in microservices.](#10-handling-rounting--cross-cutting-concerns-in-microservices)
@@ -224,8 +226,7 @@ spring.cloud.config.server.git.search-paths=config
       ...
       <dependency>
           <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-test</artifactId>
-          <scope>test</scope>
+          <artifactId>spring-boot-starter-config</artifactId>
       </dependency>
   </dependencies>
   <dependencyManagement>
@@ -259,6 +260,19 @@ public class AccountsServiceConfig {
   private String welcome;
 }
 ```  
+
+### Refresh properties
+* Add annotation `@RefreshScope`
+* Expose Actuator endpoint `refresh`, on application.properties
+
+  `management.endpoints.web.exposure.include=refresh`
+
+
+* Invoke post to refresh properties
+  
+<img src="https://antoniodiaz.github.io/images/microservices/refresh_scope.png" width="600"/>  
+
+### Encryption & decryption properties
 
 ## 8. Service discovery & registration.
 https://drive.google.com/file/d/1lhIo4iszxHKwiI5yr5y0wcCmIhKYoqj7/view?usp=share_link
