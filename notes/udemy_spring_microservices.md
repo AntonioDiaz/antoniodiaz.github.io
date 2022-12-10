@@ -273,7 +273,20 @@ public class AccountsServiceConfig {
 <img src="https://antoniodiaz.github.io/images/microservices/refresh_scope.png" width="600"/>  
 
 ### Encryption & decryption properties
+* On properties server add the key to `bootstrap.yml`
+```yml
+encrypt:
+  key: xxxxxxxx
+```
+* The server exposes 2 enpoints to encrypt and decryp properties  
+  * POST: http://localhost:8071/encrypt
+  * POST: http://localhost:8071/decrypt
+<img src="https://antoniodiaz.github.io/images/microservices/properties_encrypt.png" width="400"/>  
 
+* On the properties file add de property encrypted with the value returned by de endpoint, add `{cipher}` before the value to say the server this property is encrypted. 
+```properties
+accounts.password={cipher}87be552649d61b025b42e4f3a2272e5873da64b2652f9da6bde18ad77adb7e17
+```  
 ## 8. Service discovery & registration.
 https://drive.google.com/file/d/1lhIo4iszxHKwiI5yr5y0wcCmIhKYoqj7/view?usp=share_link
 
