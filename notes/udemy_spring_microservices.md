@@ -195,7 +195,7 @@ Steps:
  ```
 ### Reading properties from local
 * Create `config` folder under `resources`  
-<img src="https://antoniodiaz.github.io/images/microservices/config_server_files.png" width="300"/>  
+<img src="https://antoniodiaz.github.io/images/microservices/config_server_files.png" width="400"/>  
 
 * Update `application.properties`  
 ```properties
@@ -205,7 +205,7 @@ spring.cloud.config.server.native.search-locations=classpath:/config
 
 ### Reading properties from repository
 * Create a repository on Github:  
-<img src="https://antoniodiaz.github.io/images/microservices/config_server_git.png" width="300"/>  
+<img src="https://antoniodiaz.github.io/images/microservices/config_server_git.png" width="400"/>  
 
 * Update `application.properties`  
 ```properties
@@ -279,9 +279,10 @@ encrypt:
   key: xxxxxxxx
 ```
 * The server exposes 2 enpoints to encrypt and decryp properties  
-  * POST: http://localhost:8071/encrypt
-  * POST: http://localhost:8071/decrypt
-<img src="https://antoniodiaz.github.io/images/microservices/properties_encrypt.png" width="400"/>  
+  * POST: http://localhost:8071/encrypt  
+  * POST: http://localhost:8071/decrypt  
+  
+<img src="https://antoniodiaz.github.io/images/microservices/properties_encrypt.png" width="600"/>  
 
 * On the properties file add de property encrypted with the value returned by de endpoint, add `{cipher}` before the value to say the server this property is encrypted. 
 ```properties
